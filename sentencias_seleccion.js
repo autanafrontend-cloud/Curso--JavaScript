@@ -1,3 +1,4 @@
+//Ejercicio 1
 // 1. Inicializa un número entero para representar un número favorito y asígnale un valor a tu elección o puedes asignar un número aleatorio a esta variable.
 // 2. Usa window.prompt() para pedir al usuario que introduzca un número y guarda el resultado en una variable.
 // 3. Crea una sentencia if que, si el número adivinado es menor que el valor inicial, imprima "demasiado bajo".
@@ -19,7 +20,7 @@ if (guess < favoriteNumber) {
     console.log("Congratulations!!!");
 }
 
-
+// Ejercicio 2
 // Tu objetivo es tomar el mes de nacimiento de un usuario y mostrar la estación del año en la que nació.
 // 1. Declara una variable llamada birthMonth y asígnale el valor del resultado de window.prompt("¿Cuál es tu mes de nacimiento?").
 // 2. Crea una estructura switch-case con varios casos y un caso por defecto (default).
@@ -59,10 +60,10 @@ switch (birthMonth) {
         console.log("Invalid month");
 }
 
+//Ejercicio 3
+//Dada una lógica de negocio escrita en forma de sentencias if/else, reescribe el programa utilizando sentencias switch.
 
-Dada una lógica de negocio escrita en forma de sentencias if/else, reescribe el programa utilizando sentencias switch.
-
-Comienza con el siguiente código:
+//Comienza con el siguiente código:
 
 // let typeId = "01";
 // let colorId = "PU";

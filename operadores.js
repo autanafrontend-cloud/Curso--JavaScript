@@ -1,11 +1,10 @@
 // Ejercicios Operadores:
-// 1.	Declare 2 variables, a and b, and assign 20 to a and 4 to b
-// 2.	Declare a variable add that uses the + operator to store the result of adding the values stored in a and b
-// 3.	Declare a variable minus that uses the - operator to store the result of subtracting the values stored in a and b
-// 4.	Declare a variable multiply that uses the * operator to store the result of multiplying the values stored in a and b
-// 5.	Declare a variable dividing that uses the / operator to store the result of dividing the values stored in a and b
-// You can print the value of the variables to the browser console (ex: console.log(add)) to check the result.
-
+// 1. Declara 2 variables, a y b, y asigna 20 a la variable a y 4 a la variable b
+// 2. Declara una variable add que use el operador + para almacenar el resultado de sumar los valores de a y b
+// 3. Declara una variable minus que use el operador - para almacenar el resultado de restar los valores de a y b
+// 4. Declara una variable multiply que use el operador * para almacenar el resultado de multiplicar los valores de a y b
+// 5. Declara una variable dividing que use el operador / para almacenar el resultado de dividir los valores de a y b
+// Puedes imprimir el valor de las variables en la consola del navegador (ej: console.log(add)) para comprobar el resultado.
 
 const a = 20;
 const b = 4;
@@ -25,7 +24,6 @@ console.log("División:", dividing);
 // Exercise 2#
 // 1.	Use the following code to answer the questions below:
 
-
 let num = 11;
 let str = "11";
 let str2 = "eleven";
@@ -39,6 +37,8 @@ console.log(num + isPresent);
 console.log(firstName + num);
 console.log(isPresent + str);
 console.log(firstName + lastName);
+
+// Usa el código anterior para probar y mostrar los resultados.
 
 // Exercise 3#
 // 1.	Use the following code to answer the questions below:
@@ -54,3 +54,5 @@ console.log(val + str4);
 console.log(val + isAwake);
 console.log(str3 + isAwake);
 console.log(str4 + val);
+
+// Usa el código anterior para probar y mostrar los resultados.
