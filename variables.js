@@ -7,12 +7,11 @@ const firstName = "Ernesto";
 let lastName = "Vera";
 var age = 49;
 
-
+// Ejercicio 2
 // Los pasos deben completarse en el archivo app.js.
 // 1. Asigna tu nombre como valor de tipo string a la variable firstName
 // 2. Asigna tu apellido como valor de tipo string a la variable lastName
 // 3. Asigna tu edad como valor numérico a la variable age
-
 
 
 let firstName2;
