@@ -31,7 +31,7 @@ let min = Math.min(num1, num2);
 let max = Math.max(num1, num2);
 
 // Variables acumuladoras
-let sumaTotal = 0;
+let sum = 0;
 let sumaPares = 0;
 let sumaImpares = 0;
 let sumaPrimos = 0;

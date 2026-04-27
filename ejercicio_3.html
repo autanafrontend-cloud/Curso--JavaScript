@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Output</title>
+</head>
+
+<body>
+
+    <h2>Resultados</h2>
+
+    <pre id="output"></pre>
+
+    <script>
+        // =========================
+        // EXERCISE 1: Guess number
+        // =========================
+        let favoriteNumber = Math.floor(Math.random() * 10) + 1;
+        let guess = Number(window.prompt("Adivina el número (1-10):"));
+
+        let result1 = "";
+
+        if (guess < favoriteNumber) {
+            result1 = "too low";
+        } else if (guess > favoriteNumber) {
+            result1 = "too high";
+        } else {
+            result1 = "Congratulations!!!";
+        }
+
+
+        // =========================
+        // EXERCISE 2: Month
+        // =========================
+        let birthMonth = window.prompt("What is your birth month?");
+        birthMonth = birthMonth.toLowerCase();
+
+        let result2 = "";
+
+        switch (birthMonth) {
+            case "december":
+            case "january":
+            case "february":
+                result2 = "Winter ❄️";
+                break;
+
+            case "march":
+            case "april":
+            case "may":
+                result2 = "Spring 🌸";
+                break;
+
+            case "june":
+            case "july":
+            case "august":
+                result2 = "Summer ☀️";
+                break;
+
+            case "september":
+            case "october":
+            case "november":
+                result2 = "Autumn 🍂";
+                break;
+
+            default:
+                result2 = "Invalid month";
+        }
+
+
+        // =========================
+        // EXERCISE 3: Product
+        // =========================
+        let typeId = "01";
+        let colorId = "PU";
+        let sizeId = "L";
+
+        let type = "";
+        let color = "";
+        let size = "";
+
+        switch (typeId) {
+            case "01": type = "Tank top"; break;
+            case "02": type = "T-Shirt"; break;
+            case "03": type = "Long Sleeve"; break;
+            case "04": type = "Sweat Shirt"; break;
+            default: type = "Other";
+        }
+
+        switch (colorId) {
+            case "BL": color = "Black"; break;
+            case "BU": color = "Blue"; break;
+            case "RD": color = "Red"; break;
+            case "PU": color = "Purple"; break;
+            default: color = "White";
+        }
+
+        switch (sizeId) {
+            case "S": size = "Small"; break;
+            case "M": size = "Medium"; break;
+            case "L": size = "Large"; break;
+            case "XL": size = "Extra Large"; break;
+            default: size = "One Size Fits All";
+        }
+
+        let product = `Product: ${size} ${color} ${type}`;
+
+
+        // =========================
+        // MOSTRAR EN HTML
+        // =========================
+        document.getElementById("output").textContent =
+            "Game: " + result1 + "\n" +
+            "Season: " + result2 + "\n" +
+            product;
+    </script>
+
+</body>
+
+</html>
