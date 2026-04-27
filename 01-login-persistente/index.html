@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login persistente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="shell">
+    <div class="brand">
+      <span class="badge">Demo 1</span>
+      <h1>Login persistente</h1>
+      <p>Simula un "recordarme" con localStorage.</p>
+    </div>
+
+    <div class="card">
+      <div class="status" id="status">Sin sesión activa</div>
+      <form id="loginForm">
+        <label>Usuario</label>
+        <input id="user" type="text" placeholder="alumno@clase.dev" />
+        <label>Contraseña</label>
+        <input id="password" type="password" placeholder="••••••••" />
+        <label class="row remember"><input id="remember" type="checkbox" checked />Recordarme</label>
+        <div class="actions">
+          <button type="submit">Entrar</button>
+          <button type="button" class="ghost" id="logoutBtn">Cerrar sesión</button>
+        </div>
+      </form>
+      <div class="tip">
+        <strong>Claves didácticas</strong>
+        <ul>
+          <li>localStorage guarda el usuario entre recargas</li>
+          <li>sessionStorage sería mejor para flujos temporales</li>
+          <li>Nunca guardes contraseñas reales en texto plano</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+body{margin:0;font-family:Segoe UI,Arial,sans-serif;background:#0b1324;color:#eef5ff;display:grid;place-items:center;min-height:100vh}
+main{max-width:720px;padding:28px;border-radius:24px;background:#101d34;border:1px solid rgba(255,255,255,.08)}
+pre{padding:14px;border-radius:16px;background:#09172d;color:#9dd4ff;overflow:auto}
+p{color:#a6bbd8;line-height:1.6}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disney API · REST y GraphQL</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero"><div><p class="eyebrow">API 5 · Disney API</p><h1>REST frente a GraphQL</h1><p>Una misma temática para comparar dos estilos de acceso remoto dentro de la misma aplicación.</p></div></header>
+  <main class="grid">
+    <section class="card controls">
+      <h2>Búsqueda</h2>
+      <div class="search-row">
+        <input id="term" placeholder="Mickey, Elsa, Stitch…" value="Mickey" />
+        <button id="rest">Consultar REST</button>
+        <button id="graphql">Consultar GraphQL</button>
+      </div>
+      <pre id="status" class="status">Elige el tipo de consulta.</pre>
+    </section>
+    <section class="card"><h2>Personajes</h2><div id="characters" class="results"></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

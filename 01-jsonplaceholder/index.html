@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSONPlaceholder · CRUD básico</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">API 1 · JSONPlaceholder</p>
+      <h1>CRUD básico con Fetch</h1>
+      <p>Demo local-first para explicar GET, POST, PUT y DELETE simulados sobre una API fake.</p>
+    </div>
+  </header>
+
+  <main class="grid">
+    <section class="card controls">
+      <h2>Operaciones</h2>
+      <div class="buttons">
+        <button data-action="users">Cargar usuarios</button>
+        <button data-action="posts">Cargar posts</button>
+        <button data-action="create">Crear post</button>
+        <button data-action="update">Actualizar post #1</button>
+        <button data-action="delete">Eliminar post #1</button>
+      </div>
+      <pre id="status" class="status">Pulsa un botón para empezar…</pre>
+    </section>
+
+    <section class="card">
+      <h2>Resultado</h2>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

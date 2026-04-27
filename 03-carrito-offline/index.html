@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito persistente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+  <section class="catalog">
+    <span class="badge">Demo 3</span>
+    <h1>Carrito persistente</h1>
+    <p>El usuario puede cerrar la página y volver más tarde sin perder la selección.</p>
+    <div class="grid" id="products"></div>
+  </section>
+
+  <aside class="cart">
+    <div class="cart-head">
+      <h2>Mi carrito</h2>
+      <button id="clearBtn" class="ghost">Vaciar</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="summary">
+      <span>Total</span>
+      <strong id="total">0.00 €</strong>
+    </div>
+    <button id="saveBtn">Guardar carrito</button>
+  </aside>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

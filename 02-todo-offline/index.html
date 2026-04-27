@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo offline</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <span class="badge">Demo 2</span>
+        <h1>ToDo offline</h1>
+        <p>Añade, completa y elimina tareas. Todo persiste en localStorage.</p>
+      </div>
+      <div class="pill" id="count">0 tareas</div>
+    </header>
+
+    <section class="composer">
+      <input id="taskInput" type="text" placeholder="¿Qué necesitas hacer?" />
+      <button id="addBtn">Agregar</button>
+    </section>
+
+    <section class="filters">
+      <button class="filter active" data-filter="all">Todas</button>
+      <button class="filter" data-filter="pending">Pendientes</button>
+      <button class="filter" data-filter="done">Completadas</button>
+      <button class="danger" id="clearBtn">Borrar completadas</button>
+    </section>
+
+    <ul id="list"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

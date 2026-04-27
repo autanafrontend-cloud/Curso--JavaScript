@@ -21,6 +21,7 @@ class Figura {
 const figura1 = new Figura(10, 20);
 console.log(figura1.descripcion());
 
+
 /*Ejercicio 2. Validación de coordenadas
 Modifica `Figura` para validar que `x` e `y` sean números y además sean mayores o iguales que 0. Si no lo son, debe lanzarse `throw new Error(...)`.
 Pistas de trabajo

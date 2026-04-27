@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PokeAPI · async/await</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero"><div><p class="eyebrow">API 3 · PokeAPI</p><h1>async / await + búsqueda dinámica</h1><p>Perfecta para practicar endpoints con parámetros y JSON anidado.</p></div></header>
+  <main class="grid">
+    <section class="card controls">
+      <h2>Buscar Pokémon</h2>
+      <div class="search-row">
+        <input id="name" placeholder="pikachu, charmander, ditto…" value="pikachu" />
+        <button id="search">Buscar</button>
+      </div>
+      <pre id="status" class="status">Introduce un nombre y pulsa buscar.</pre>
+    </section>
+    <section class="card"><h2>Ficha</h2><div id="pokemon" class="pokemon"></div></section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

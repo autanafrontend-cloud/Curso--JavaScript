@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PWA básica offline</title>
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <span class="badge">Demo 4</span>
+      <h1>App offline con Service Worker</h1>
+      <p>Ejemplo moderno para llevar el concepto de AppCache a proyectos reales.</p>
+      <div class="hero-actions">
+        <span id="networkStatus" class="pill online">Conexión activa</span>
+        <button id="cacheBtn" class="ghost">Forzar actualización</button>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Qué queda disponible sin red</h2>
+        <ul>
+          <li>La interfaz principal</li>
+          <li>Los estilos y el JavaScript</li>
+          <li>Esta tarjeta de contenidos</li>
+          <li>La página offline personalizada</li>
+        </ul>
+      </article>
+      <article class="panel">
+        <h2>Patrón explicado</h2>
+        <ol>
+          <li>El navegador registra el service worker</li>
+          <li>Durante <code>install</code> se cachean archivos</li>
+          <li>En <code>fetch</code> sirve desde cache cuando falla la red</li>
+          <li>La experiencia sigue viva incluso offline</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="panel notes">
+      <h2>Notas</h2>
+      <textarea id="notes" placeholder="Escribe una nota rápida. También se guarda."></textarea>
+      <div class="row">
+        <small>La nota se guarda con localStorage, mientras que los archivos estáticos van por Cache API.</small>
+        <button id="saveNoteBtn">Guardar nota</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

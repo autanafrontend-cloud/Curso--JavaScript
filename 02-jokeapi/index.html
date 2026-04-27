@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JokeAPI · Promesas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero"><div><p class="eyebrow">API 2 · JokeAPI</p><h1>Promesas y respuestas variables</h1><p>Una demo muy útil para explicar then/catch/finally y el tratamiento de JSON con estructuras distintas.</p></div></header>
+  <main class="grid single">
+    <section class="card controls">
+      <h2>Filtros</h2>
+      <div class="buttons">
+        <button data-category="Programming">Programming</button>
+        <button data-category="Pun">Pun</button>
+        <button data-category="Misc">Misc</button>
+        <button data-category="Any">Aleatorio</button>
+      </div>
+      <pre id="status" class="status">Esperando petición…</pre>
+      <article id="joke" class="joke-box"></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

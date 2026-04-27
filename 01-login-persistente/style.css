@@ -1,0 +1,95 @@
+
+:root{
+  --bg:#071426;
+  --panel:#0f2239;
+  --panel-2:#132a46;
+  --line:rgba(255,255,255,.08);
+  --txt:#eef5ff;
+  --muted:#a8bedb;
+  --accent:#3ba0ff;
+  --green:#38d39f;
+  --danger:#ff5a73;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  min-height:100vh;
+  background:radial-gradient(circle at top left,#14345d,transparent 35%),linear-gradient(135deg,#06101e,#0a1730 45%,#071426);
+  color:var(--txt);
+  display:grid;
+  place-items:center;
+}
+.shell{
+  width:min(980px,92vw);
+  display:grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap:28px;
+  align-items:center;
+}
+.brand h1{
+  font-size:54px; line-height:1; margin:12px 0 12px;
+}
+.brand p{font-size:22px; color:var(--muted); max-width:420px; margin:0}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(59,160,255,.18);
+  color:#9dd4ff;
+  font-weight:700;
+  letter-spacing:.04em;
+}
+.card{
+  background:rgba(15,34,57,.92);
+  border:1px solid var(--line);
+  border-radius:28px;
+  padding:26px;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+  backdrop-filter: blur(10px);
+}
+.status{
+  display:inline-block;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(56,211,159,.12);
+  color:#9ef0cf;
+  margin-bottom:18px;
+  font-weight:600;
+}
+label{
+  display:block;
+  margin-bottom:8px;
+  color:#dce9fb;
+  font-weight:600;
+}
+input[type=text], input[type=password]{
+  width:100%;
+  padding:15px 16px;
+  margin-bottom:14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:#0a1830;
+  color:var(--txt);
+  font-size:16px;
+}
+.row{display:flex; align-items:center; gap:10px}
+.remember{margin:2px 0 18px; color:var(--muted); font-weight:500}
+.actions{display:flex; gap:12px; margin-bottom:18px}
+button{
+  border:0; border-radius:14px; padding:14px 18px;
+  background:linear-gradient(135deg,#2d8cff,#4cb2ff);
+  color:white; font-weight:700; cursor:pointer; flex:1;
+}
+button.ghost{background:transparent; border:1px solid var(--line); color:#dce9fb}
+.tip{
+  border-top:1px solid var(--line);
+  padding-top:18px;
+}
+.tip strong{display:block; margin-bottom:8px}
+.tip ul{margin:0; padding-left:18px; color:var(--muted); line-height:1.5}
+@media (max-width: 850px){
+  .shell{grid-template-columns:1fr}
+  .brand h1{font-size:40px}
+  .brand p{font-size:18px}
+}
